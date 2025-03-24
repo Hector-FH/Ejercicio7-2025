@@ -20,10 +20,13 @@ public class Inicio {
         Ejecutable ejecutable = null;
         Historiales historiales = null;
         historiales = Historial.getInstance();
+
+        System.out.println("Hola Hector");
         while (flag) {
             ejecutable = null;
             Menu.principal2();
             opcion = ReadUtil.getInstance().leerInt();
+
             switch (opcion) {
                 case 1:
                     ejecutable = Consola.getInstance();
